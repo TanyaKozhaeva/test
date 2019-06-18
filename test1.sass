@@ -1,0 +1,57 @@
+&__bg
+  position: absolute
+  top: 0
+  right: 0
+  width: 700px
+  height: 1028px
+  overflow: hidden
+& .monster-wrapper
+  position: absolute
+  top: 0
+  left: 209px
+  width: 700px
+  transform: rotate(-25deg)
+  height: 1028px
+  overflow: hidden
+& .monster-bg
+  width: 100%
+  height: auto
+& .monster-body
+  position: absolute
+  top: 115px
+  width: 37%
+  left: -83px
+  animation: show 1s 1s both
+& .monster-lapa
+  position: absolute
+  top: 373px
+  left: 82px
+  transform-origin: right
+  animation: lapa 1s 1s both
+& .monster-dialogue
+  transform-origin: 37% 88%
+  animation: dialogue 1s 2s both
+
+
+@keyframes lapa
+  0%
+    transform: translateX(10px) rotate(45deg)
+    opacity: 0
+  50%
+    opacity: 1
+  100%
+    transform: translateX(0) rotate(0)
+    opacity: 1
+@keyframes show
+  0%
+    transform: translate(-58%, -10px) rotate(-10deg)
+  100%
+    transform: translate(0, 0) rotate(22deg)
+
+@keyframes dialogue
+  0%
+    transform: rotate(62deg)
+    opacity: 0
+  100%
+    transform: rotate(21deg)
+    opacity: 1
